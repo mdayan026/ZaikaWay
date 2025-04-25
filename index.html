@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZaikaWay</title>
+  <meta author="THE SANDF" />
+  <link type="image/png" sizes="48" rel="icon" href="https://img.icons8.com/avantgarde/48/ingredients--v2.png">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+  <div class="container">
+    <div class="toggle-container" id="themeToggle">🌙</div>
+    <h1>Custom Meal Planner</h1>
+    <div id="optionlist">
+    <label for="category">Choose a category:</label>
+    <select id="category" class="btn" style="background-color:#3f53ea;">
+      <option value="Beef">Beef</option>
+      <option value="Chicken">Chicken</option>
+      <option value="Dessert">Dessert</option>
+      <option value="Lamb">Lamb</option>
+      <option value="Miscellaneous">Miscellaneous</option>
+      <option value="Pasta">Pasta</option>
+      <option value="Seafood">Seafood</option>
+      <option value="Vegan">Vegan</option>
+      <option value="Vegetarian">Vegetarian</option>
+      <option value="Goat">Goat</option>
+      <option value="Random">Random</option>
+    </select>
+<button class="btn" id="create">
+  <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" class="sparkle">
+      <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
+  </svg>
+  <span class="text">Generate</span>
+</button>
+    <button class="btn" id="view-recipes">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 100 100">
+        <rect width="44" height="10" x="30" y="63" fill="#ff8405"></rect><rect width="44" height="10" x="30" y="31" fill="#ff8405"></rect><rect width="44" height="10" x="30" y="47" fill="#ff8405" transform="rotate(-180 52 52)"></rect><rect width="6" height="49" x="46.5" y="19.5" fill="#3fa9f5" transform="rotate(-90 49.5 44)"></rect><polygon fill="#4343bf" points="74,25 74,41 30,41 30,47 74,47 74,57 30,57 30,63 74,63 74,73 30,73 30,79 80,79 80,25"></polygon><polygon fill="#3abcf8" points="74,21 20,21 20,76 30,76 30,31 74,31"></polygon>
+        </svg>
+      <span class="text">Saved</span>
+    </button>
+   </div>
+    <div id="meals"></div>
+    <div id="loader" class="loader hidden"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
